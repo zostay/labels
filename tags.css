@@ -1,0 +1,42 @@
+@page {
+    margin: 0.50in 0.75in 0.1in 0.75in;
+}
+
+body {
+    font-family: Optima;
+}
+
+table {
+    border-collapse: collapse;
+    width: 8in;
+    margin: auto;
+}
+
+table.next {
+    page-break-before: always;
+}
+
+td {
+    /* border: 1px solid black; */
+    position: relative;
+    width: 3.5in;
+    height: 2.375in;
+    vertical-align: middle;
+    text-align: right;
+    font-size: 2em;
+    padding: 1.2em;
+    margin: 0;
+}
+
+td img {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    width: 1.7in;
+    margin-top: -20%;
+    z-index: -100;
+}
+
+span {
+    display: block;
+}

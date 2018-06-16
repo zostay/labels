@@ -1,0 +1,14 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" media="print" href="tags.css">
+<link rel="stylesheet" type="text/css" href="tags.css">
+</head>
+<body>
+<table>
+[% FOREACH name IN names %]
+[% IF loop.index % 10 == 0 AND NOT loop.first %]</table><table class="next">[% END %]
+[% IF loop.odd %]<tr>[% END %]<td><img src="IGNITEFIN.jpeg"><span class="first">[% name.first %]</span><span class="last">[% name.last %]</span></td>[% IF loop.even %]</tr>[% END %]
+[% END %]
+</table>
+</body>
+</html>

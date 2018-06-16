@@ -1,0 +1,13 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" media="print" href="labels.css">
+</head>
+<body>
+<table>
+[% FOREACH name IN names %]
+[% IF loop.index % 10 == 0 AND NOT loop.first %]</table><table class="next">[% END %]
+[% IF loop.odd %]<tr>[% END %]<td style="color:[% name.color %]"><span class="first">[% name.first %]</span><span class="last">[% name.last %]</span></td>[% IF loop.even %]</tr>[% END %]
+[% END %]
+</table>
+</body>
+</html>
